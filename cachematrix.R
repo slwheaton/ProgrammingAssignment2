@@ -1,6 +1,6 @@
 #--Coursera - R Programming - Week 3 Assignment
 
-#--Create matrix inverse to cache
+#--Retrieve cached matrix inverse from special function
 makeCacheMatrix <- function(x = matrix()) {
      matrixinv <- NULL
      set <- function(y) {               
@@ -13,7 +13,7 @@ makeCacheMatrix <- function(x = matrix()) {
      list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
 }
 
-#--Retrieve cached matrix inverse
+#--Create matrix inverse to cache
 cacheSolve <- function(x, ...) {
      matrixinv <- x$getinverse()
      if(!is.null(matrixinv)) {
