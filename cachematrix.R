@@ -1,4 +1,4 @@
-#--Coursera - R Programming - Week Assignment
+#--Coursera - R Programming - Week 3 Assignment
 
 #--Create matrix inverse to cache
 makeCacheMatrix <- function(x = matrix()) {
@@ -15,7 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 #--Retrieve cached matrix inverse
 cacheSolve <- function(x, ...) {
-     inv <- x$getinverse()
+     matrixinv <- x$getinverse()
      if(!is.null(matrixinv)) {
           message("getting cached data")
           return(matrixinv)
